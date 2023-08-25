@@ -1,0 +1,101 @@
+.container {
+    padding: 0;
+    width: 100%;
+    background-position: 100%;
+    background-size: contain;
+    background-color: #0a2d4b;
+    color: aliceblue;
+}
+.content {
+    margin: auto;
+    padding: 85px 0 64px;
+    border-bottom: 1px solid hsla(0, 0%, 100%, 0.2);
+    max-width: 1140px;
+    .logo {
+        margin-bottom: 30px;
+    }
+}
+.info-company {
+    display: flex;
+    justify-content: space-between;
+
+    .address {
+        width: 30%;
+        .title {
+            padding-bottom: 16px;
+        }
+        .address-detail {
+            text-align: justify;
+            width: 250px;
+            margin-bottom: 10px;
+            color: #7791a6;
+        }
+    }
+    .nav-footer {
+        width: 30%;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 0 80px;
+        .nav-item {
+            padding: 8px 16px;
+            min-width: 110px;
+            cursor: pointer;
+            color: #bacbd9;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    .connect {
+        width: 30%;
+        text-align: end;
+    }
+}
+.copyright {
+    max-width: 1140px;
+    color: #7791a6;
+    margin: auto;
+    height: 80px;
+    line-height: 80px;
+}
+
+@media only screen and (max-width: 425px) {
+    .container {
+        max-width: 425px;
+        .content {
+            margin: 0 20px;
+            .info-company {
+                flex-direction: column;
+                .address {
+                    width: 100%;
+                    margin-bottom: 20px;
+                }
+                .nav-footer {
+                    width: 100%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    padding: 0 0 80px;
+                    .nav-item {
+                        padding: 8px 0;
+                        min-width: 110px;
+                        cursor: pointer;
+                        color: #bacbd9;
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+                .connect {
+                    text-align: start;
+                }
+            }
+        }
+        .copyright {
+            max-width: 1140px;
+            color: #7791a6;
+            margin: 0 20px;
+            height: 80px;
+            line-height: 80px;
+        }
+    }
+}

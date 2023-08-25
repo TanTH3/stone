@@ -1,0 +1,65 @@
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    background-color: white;
+    z-index: 99;
+    flex-direction: column;
+    max-width: 425px;
+    animation: fadeInLeft linear 0.3s;
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 10px;
+        margin-bottom: 20px;
+        height: 80px;
+    }
+
+    .product {
+        margin-left: 20px;
+        .item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            .img {
+                height: 62px;
+                margin-right: 20px;
+            }
+        }
+    }
+    .nav {
+        margin-left: 20px;
+        .nav-item {
+            display: flex;
+            flex-direction: column;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 19px;
+            color: #666;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+@keyframes fadeInLeft {
+    0% {
+        transform: translateX(-425px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+@keyframes hideToLeft {
+    0% {
+        transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(-425px);
+    }
+}

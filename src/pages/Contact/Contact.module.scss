@@ -1,0 +1,164 @@
+.container {
+    width: 100%;
+    .header {
+        width: 100%;
+        height: 500px;
+        background: url(./../../assets/img/contact1.jpg);
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-size: cover;
+        .title {
+            font-size: 60px;
+            color: #fff;
+            letter-spacing: 0.3px;
+            text-align: center;
+            line-height: 60px;
+            text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.15);
+            font-weight: 100;
+        }
+    }
+    .content {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .address {
+            padding-top: 140px;
+            padding-bottom: 140px;
+            max-width: 1200px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-right: -15px;
+            margin-left: -15px;
+            position: relative;
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+
+            .detail-address {
+                flex: 0 0 33.3333333333%;
+                max-width: 33.3333333333%;
+                padding: 0 20px;
+
+                .name-company {
+                    font-size: 19px;
+                    color: #262626;
+                    letter-spacing: 0.3px;
+                    line-height: 30px;
+                    margin: 0 0 20px;
+                }
+
+                .label {
+                    font-weight: 500;
+                    font-size: 16px;
+                    letter-spacing: 0;
+                    margin-bottom: 8px;
+                }
+                .info {
+                    color: #404040;
+                    line-height: 22px;
+                    cursor: pointer;
+                    margin-bottom: 10px;
+                    display: block;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+            .map {
+                flex: 0 0 66.6666666667%;
+                max-width: 50%;
+                background: url(./../../assets/img/map1.png);
+                background-size: auto;
+                background-position: center;
+                .map-link {
+                    width: 100%;
+                    height: 100%;
+                    cursor: pointer;
+                    display: block;
+                }
+            }
+        }
+    }
+    .contact-form {
+        width: 100%;
+        text-align: center;
+        .wrap {
+            max-width: 1200px;
+            background: #f5f5f5;
+            padding: 80px 0;
+            margin: auto;
+            margin-bottom: 140px;
+            .title-form {
+                font-size: 34px;
+                color: #0a2d4b;
+                letter-spacing: 0.3px;
+                text-align: center;
+                line-height: 40px;
+                margin-bottom: 45px;
+            }
+            .content-form {
+                width: 570px;
+                margin: 0 auto;
+
+                .form-input {
+                    display: flex;
+                    align-items: center;
+                    border-bottom: 1px solid #e0e0e0;
+                    padding-bottom: 10px;
+                    margin-bottom: 16px;
+
+                    label {
+                        min-width: 120px;
+                        text-align: start;
+                        flex: 0 0 120px;
+                        max-width: 120px;
+                        font-weight: 600;
+                        font-size: 12px;
+                        color: #262626;
+                        letter-spacing: 1px;
+                        text-transform: uppercase;
+                    }
+
+                    input {
+                        border: 0;
+                        background: transparent;
+                        font-weight: 600;
+                        font-size: 12px;
+                        color: #8c8c8c;
+                        letter-spacing: 1px;
+                    }
+                    textarea {
+                        border: 0;
+                        background: transparent;
+                        font-weight: 600;
+                        font-size: 14px;
+                        color: #8c8c8c;
+                        letter-spacing: 1px;
+                        padding: 30px 0 6px;
+                        width: 100%;
+                        height: 90px;
+
+                        &:focus-visible {
+                            outline: none;
+                        }
+                    }
+                }
+                button {
+                    font-size: 13px;
+                    line-height: 18px;
+                    padding: 14px 32px;
+                    background-color: #0a2d4b;
+                    color: white;
+                    margin-top: 30px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
