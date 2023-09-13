@@ -107,7 +107,7 @@ function Contact() {
                                 <div className={cx('form-input')}>
                                     <label>TÊN CỦA BẠN</label>
                                     <input
-                                        value={dataArr.name}
+                                        // value={dataArr.name}
                                         type="text"
                                         name="user_name"
                                         placeholder="TÊN CỦA BẠN"
@@ -119,7 +119,7 @@ function Contact() {
                                 <div className={cx('form-input')}>
                                     <label>EMAIL</label>
                                     <input
-                                        value={dataArr.email}
+                                        // value={dataArr.email}
                                         onChange={(e) => {
                                             handleChange(e, 'email');
                                         }}
@@ -134,7 +134,7 @@ function Contact() {
                                         onChange={(e) => {
                                             handleChange(e, 'message');
                                         }}
-                                        value={dataArr.message}
+                                        // value={dataArr.message}
                                         name="message"
                                         placeholder="LỜI NHẮN CỦA BẠN"
                                     />
